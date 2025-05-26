@@ -15,6 +15,7 @@ it('should visit google',function(){
     /*
         1- we can add url as optional (second paramter)
         2- we can send query using qs
+        3- you can visit command through the url "https://docs.cypress.io/api/commands/visit"
     */
    cy.visit('/',{
     qs:{
