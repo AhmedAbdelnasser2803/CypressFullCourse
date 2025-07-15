@@ -5,7 +5,7 @@ it("select command",()=>{
     - we can select the option using 
     1- value     2-index    3-text 
     */
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     // -get by value 
     cy.get('#courses').select('cypress');
     //  -get by index 

@@ -6,7 +6,7 @@
 
 
 it('find element by tag name',()=>{
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
 
     // put the tag name inside the get command 
     // this command will return all elements have this tag name 
@@ -15,7 +15,7 @@ it('find element by tag name',()=>{
 
 
 it('find element by id',()=>{
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
 
     // put the tag name inside the get command 
     // this command will return the element have the course in id
@@ -24,7 +24,7 @@ it('find element by id',()=>{
 })
 
 it('find element by class name', ()=>{
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
 
     // can get the element by the class name with using . before the class name
     cy.get('.course-list');
@@ -37,7 +37,7 @@ it('find element by class name', ()=>{
 
 it('find element by attribute', ()=>{
     // to find any attribute , use []
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     cy.get('[value="Download Invoice"]');
     // we can use this method with any attribute 
 
@@ -45,27 +45,27 @@ it('find element by attribute', ()=>{
 })
 
 it('find the first element from the list of element', ()=>{
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     // use first command to get the first element of the list of element 
     // please use 'first()' command 
     cy.get('[value="Download Invoice"]').first();
 })
 
 it('find the last element from the list of element', ()=>{
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     // use last command to get the first element of the list of element 
     // please use 'last()' command 
     cy.get('[value="Download Invoice"]').last();
 })
 
 it('find the last element from the list of element', ()=>{
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     // use last command to get the last element of the list of element 
     // please use 'last()' command 
     cy.get('[value="Download Invoice"]').last();
 })
 it('find the element by index', ()=>{
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     // use eq function to get the element by index 
     // use 'eq()' command 
     cy.get('[value="Download Invoice"]').eq(3);
@@ -74,13 +74,13 @@ it('find the element by index', ()=>{
 it('use filter command to get the element with condition', ()=>{
     // can find the element and filter again to get the correct element
     // can use 'filter()' command
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     cy.get('li').filter('.web');
 })
 
 
 it('use children method to get all children of the tag', ()=>{
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     // 
     cy.get('.course-list').children();  
     cy.get('.course-list').children('.web');
@@ -90,21 +90,21 @@ it('use children method to get all children of the tag', ()=>{
 })
 
 it('use find method to get element', ()=>{
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     // we use find to get children of children 
     // this method like the 'children()' method but it in deep 
     cy.get('.course-list').find('.web');  
 })
 
 it('find element using parent method', ()=>{
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     // to find the first parent of the children using parent method 
     // at first get the children of the parent then get the parent 
     cy.get('.list1.web').parent();
 })
 
 it('find all parent of the element using parents method', ()=>{
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     // to find the first parent of the children using parent method 
     // at first get the children of the parent then get the parent 
     cy.get('.list1.web').parents();
@@ -112,7 +112,7 @@ it('find all parent of the element using parents method', ()=>{
 
 
 it('find the elements with the same level (siblings)', ()=>{
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     // get the all elements that is in the same level 
     // use 'siblings()' method to get this  
     cy.get('.list1.web').siblings();
@@ -122,6 +122,6 @@ it('find the elements with the same level (siblings)', ()=>{
 it.only('find element by the text', ()=>{
     // find element by that text that contain 
     // use 'contains()' to get it 
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     cy.contains('Welcome to Cypress Tutorials');
 })

@@ -2,7 +2,7 @@
 
 it('type command',()=>{
     // we can type on the field using type command 
-    cy.visit('http://10.0.2.15:8080/index.html');
+    cy.visit('/');
     // -set the email and password on the field using 'type' command 
     // -we can add option with the words 
     cy.get('#inputEmail').type('ahmed.abdelnasser2803@gmail.com{enter}');
