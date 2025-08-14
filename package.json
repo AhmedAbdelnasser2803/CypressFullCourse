@@ -1,15 +1,17 @@
 {
-  "name": "my-cypress-project",
+  "name": "selenium-google-project",
   "version": "1.0.0",
+  "description": "Selenium project to open Google website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js",
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "cypress": "^14.3.3"
-  },
-  "description": ""
+  "keywords": ["selenium", "webdriver", "automation"],
+  "author": "Ahmed Abdelnasser",
+  "license": "MIT",
+  "dependencies": {
+    "selenium-webdriver": "^4.15.0",
+    "chromedriver": "^119.0.0"
+  }
 }
