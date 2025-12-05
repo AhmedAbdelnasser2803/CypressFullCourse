@@ -7,11 +7,18 @@
     "test": "node test.js",
     "start": "node index.js"
   },
-  "keywords": ["selenium", "webdriver", "automation"],
+  "keywords": [
+    "selenium",
+    "webdriver",
+    "automation"
+  ],
   "author": "Ahmed Abdelnasser",
   "license": "MIT",
   "dependencies": {
-    "selenium-webdriver": "^4.15.0",
-    "chromedriver": "^119.0.0"
+    "chromedriver": "^119.0.0",
+    "selenium-webdriver": "^4.15.0"
+  },
+  "devDependencies": {
+    "cypress": "^15.7.1"
   }
 }

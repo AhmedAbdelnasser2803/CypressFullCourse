@@ -1,6 +1,6 @@
-# Selenium Google Project
+# Cypress Google Project
 
-This project demonstrates how to use Selenium WebDriver to automate opening and testing the Google website.
+This project demonstrates how to use Cypress WebDriver to automate opening and testing the Google website.
 
 ## Prerequisites
 
@@ -13,13 +13,14 @@ This project demonstrates how to use Selenium WebDriver to automate opening and 
 1. Clone or download this project
 2. Navigate to the project directory:
    ```bash
-   cd selenium-google-project
+   cd Cypress-google-project
    ```
 
 3. Install dependencies:
    ```bash
    npm install
    ```
+4. start local server to be able to open the HTML file 
 
 ## Usage
 
@@ -48,7 +49,7 @@ node test.js
 ## Project Structure
 
 ```
-selenium-google-project/
+Cypress-google-project/
 ├── index.js          # Main script to open Google
 ├── test.js           # Comprehensive test suite
 ├── package.json      # Project dependencies
@@ -57,7 +58,7 @@ selenium-google-project/
 
 ## Features
 
-- Opens Google website using Selenium WebDriver
+- Opens Google website using Cypress WebDriver
 - Runs in headless mode (no browser window)
 - Comprehensive test suite
 - Error handling
@@ -90,6 +91,3 @@ If you get permission errors:
 sudo chmod +x node_modules/chromedriver/lib/chromedriver/chromedriver
 ```
 
-## License
-
-MIT License
